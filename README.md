@@ -1,6 +1,6 @@
 **Spring Boot + MyBatis**
 
-In MyBatis, I skip XML entirely and use annotations on mapper interfaces. This makes the project cleaner and easier to maintain for small-to-medium applications. Here’s a full Spring Boot + MyBatis annotation-based web app.
+This project focuses on high performance and lightweight data access, hence it was decided to employ MyBatis' Micro-ORM in the Spring Boot project.In MyBatis, I use annotations on mapper interfaces instead of XML. This cleans up the project and makes it easier to maintain in small-to-medium applications. MyBatis = SQL Mapper / Micro-ORM → Manual SQL, fine-grained control, better for performance and legacy DBs.
 
 Used Features of this Annotation-Based Setup:  
 1.	No XML files needed — all SQL is in mapper interface annotations.  
@@ -76,7 +76,17 @@ Spring Boot + MyBatis (Annotation-Based) Architecture Flow
 5.	Database returns the result.  
 6.	MyBatis maps the result to a Java object (User).  
 7.	Service returns the object to the Controller.  
-8.	Controller returns JSON to the client.  
+8.	Controller returns JSON to the client.
+
+Can test this CRUD APIs via Postman:
+| HTTP Method | URL         | Action          |
+| ----------- | ----------- | --------------- |
+| GET         | /users      | List all users  |
+| GET         | /users/{id} | Get user by ID  |
+| POST        | /users      | Create new user |
+| PUT         | /users/{id} | Update user     |
+| DELETE      | /users/{id} | Delete user     |
+
 
 H2 Console:
 
