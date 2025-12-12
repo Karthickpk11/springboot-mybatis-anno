@@ -79,10 +79,10 @@ Spring Boot + MyBatis (Annotation-Based) Architecture Flow
 8.	Controller returns JSON to the client.  
 
 H2 Console:
+
 <img width="683" height="600" alt="image" src="https://github.com/user-attachments/assets/fa7e16e6-c850-4570-95eb-b966f9fec2d2" />
 
 Data from H2 Database:
+
 <img width="795" height="517" alt="image" src="https://github.com/user-attachments/assets/24986b9a-a657-4efc-94c4-695020392d58" />
-
-
 
