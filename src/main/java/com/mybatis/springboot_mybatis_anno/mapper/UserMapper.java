@@ -2,7 +2,6 @@ package com.mybatis.springboot_mybatis_anno.mapper;
 
 import com.mybatis.springboot_mybatis_anno.model.User;
 import org.apache.ibatis.annotations.*;
-
 import java.util.List;
 
 @Mapper
